@@ -1,0 +1,176 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teach-titan</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" />
+
+<body>
+  
+  <nav class=" navbar-header navbar navbar-expand-lg bg-body-tertiary" >
+    <div class="container-fluid">
+      <a class="navbar-brand nav-text" href="#" >Home</a>
+      <a class="navbar-brand nav-text" href="#" >About</a>
+      
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+<div id="map"></div> -->
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/map.js"></script> 
+</body>
+</html> -->
+
+
+
+
+
+<!-- frontend  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teach-titan</title>
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""
+/>
+
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="parent">
+
+  <div class="first">
+  <div class="home" >
+    Home
+  </div>
+  <div>
+    About
+  </div>
+  </div>
+
+  <div class="second">
+    <a href="#section1">
+    <div class="map">
+      Map
+    </div>
+  </a>
+    <div class="drop-down">
+     
+    <label for="state" class="state">Choose a State:</label>
+
+    <!-- <select id="state"> -->
+
+      <select id="state" onchange="navigateToPage()">
+        <option value="page1.html">Northen India</option>
+        <option value="page2.html">South India</option>
+        <option value="page2.html">West India</option>
+        <option value="page2.html">East India</option>
+        <!-- Add more options as needed -->
+    </select>
+    </div>
+
+  </div>
+
+</div>
+</div>  
+
+  <!-- content -->
+<div class="main-body">
+ <div>
+<img src="https://media.tenor.com/aJJqDd5g12MAAAAM/dam-flood.gif" class="image-body" alt="dam-image">
+</div>
+<div class="main-content">
+  <h1>Welcome to Our Comprehensive Water Resource Mapping Platform</h1>
+  <p class="main-body-p">
+   we are proud to present a revolutionary initiative aimed at centralizing and mapping all water resources across India. Our platform provides a comprehensive overview of dams, rivers, and water treatment plants, offering valuable insights into the country's water infrastructure.
+  
+  Our Vision
+  Our vision is to create a single, unified platform that serves as a repository of information on India's water resources. By consolidating data on dams, rivers, and water treatment facilities, we aim to empower stakeholders with the knowledge needed to make informed decisions regarding water management and conservation efforts.
+  
+  Mapping India's Water Landscape
+  Dams: Explore our interactive map to discover detailed information about dams across India, including their locations, capacities, construction dates, and purposes. Learn about the role of dams in irrigation, hydroelectric power generation, flood control, and water supply.
+  
+  Rivers: Dive into our database of rivers, tracing their courses from source to mouth and uncovering key features such as tributaries, flow rates, water quality data, and ecological significance. Understand the importance of rivers in sustaining ecosystems, supporting agriculture, and providing drinking water.
+  
+  Water Treatment Plants: Gain insights into the network of water treatment plants across India, essential for ensuring the supply of clean and safe drinking water to communities. Access information about treatment processes, capacities, water sources, and regulatory compliance.
+  
+  Why It Matters
+  Access to clean and abundant water resources is essential for the well-being and prosperity of India's population. By centralizing data on dams, rivers, and water treatment plants, we can:
+  
+  Facilitate Planning: Governments, policymakers, and urban planners can use our platform to develop sustainable water management strategies, address water scarcity, and mitigate the impacts of climate change.
+  
+  Promote Collaboration: Our platform fosters collaboration among stakeholders, enabling data-driven decision-making and coordination of efforts to address water-related challenges at local, regional, and national levels.
+  
+  Empower Communities: Communities can use our platform to access information about local water resources, advocate for their water rights, and participate in water conservation and management initiatives.
+</p>
+</div>
+</div>
+
+<div class="thin-navigation">
+  <a href="/north.html">
+  <div class="thin-item">
+    Northen India
+  </div>
+</a>
+  <a href="/south.html">
+  <div class="thin-item">
+    South India
+  </div>
+</a>
+<a href="/west.html">
+  <div class="thin-item">
+    West India
+  </div>
+</a>
+  <a href="/east.html">
+  <div class="thin-item">
+    East India
+  </div>
+</a>
+</div>
+
+<section id="section1">
+  <div id="map"> </div>
+
+</section>
+
+
+
+
+  <div class="footer">
+    teach-titan
+  </div>
+
+  <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./dam.js"></script>
+    <script src="./plant.js"></script>
+    <script src="./map.js"></script>
+</body>
+</html>
